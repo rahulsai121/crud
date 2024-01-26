@@ -52,7 +52,11 @@ function showOnscreen(x){
 
      const button = document.createElement('button');
      button.textContent = 'Delete';
-     button.onclick = function(event) {    };
+     button.onclick = function(event) { 
+      axios.delete(`https://crudcrud.com/api/71aad4755a1b4d51b3eea949ad28fbee/data/${i}`)
+       .then(res=>console.log('okok'));
+       event.target.parentNode.remove();
+        };
 
 
 
