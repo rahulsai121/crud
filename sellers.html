@@ -9,8 +9,8 @@
     <form onsubmit="sellerAdmit(event)">
       <label for="price">Selling Price:</label>
       <input type="number" id="price" />
-      <label for="phone">Products Name:</label>
-      <input type="text" id="phone" />
+      <label for="name">Products Name:</label>
+      <input type="text" id="name" />
       <select id="option">
         <option value="electronic">Electronics Items</option>
         <option value="food">Food Items</option>
@@ -18,15 +18,18 @@
       </select>
       <button type="submit">Submit</button>
     </form>
-    <div id="electronicdiv">
-        <h2>Electronics Items</h2>
-    </div>
-    <div id="fooddiv">
-        <h2>Food Items</h2>
-    </div>
-    <div id="skincarediv">
-        <h2>Skincare Items</h2>
-    </div>
+    <h2>Products</h2>
+    <h2>Electronics Items</h2>
+    <ul id="electronicul">
+    </ul>
+    <h2>Food Items</h2>
+    <ul id="foodul">
+    
+    </ul>
+    <h2>Skincare Items</h2>
+    <ul id="skincareul">
+        
+    </ul>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="sellers.js"></script>
 </body>
