@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sellerAdmit(event)">
+      <label for="price">Selling Price:</label>
+      <input type="number" id="price" />
+      <label for="phone">Products Name:</label>
+      <input type="text" id="phone" />
+      <select id="option">
+        <option value="electronic">Electronics Items</option>
+        <option value="food">Food Items</option>
+        <option value="skincare">Skincare Items</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="electronicdiv">
+        <h2>Electronics Items</h2>
+    </div>
+    <div id="fooddiv">
+        <h2>Food Items</h2>
+    </div>
+    <div id="skincarediv">
+        <h2>Skincare Items</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="sellers.js"></script>
+</body>
+</html>
